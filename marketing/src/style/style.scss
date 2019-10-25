@@ -1,0 +1,265 @@
+@import "variables";
+@import "default";
+@import "mixin";
+
+.layout-center {
+    max-width: 1114px;
+    margin: 0 auto;
+}
+
+.head-title {
+    color: #000000;
+    font-size: 3.25rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.advantages {
+    display: flex;
+    position: relative;
+
+    &__item {
+        flex-basis: calc(33.33% - 30px);
+        margin-right: 30px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px #E1E4ED;
+        background-color: #ffffff;
+    }
+
+    &__title {
+        font-size: 1.375rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    &__title-text {
+        background: linear-gradient(150.37deg, #3C09B3 45.95%, #D43F4F 80.35%, #F4C545 107.24%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #3C09B3;
+        display: table;
+    }
+
+    &__description {}
+}
+
+.teaser {
+    position: relative;
+
+    &__pic {
+        position: absolute;
+        left: -43px; top: -1px;
+        z-index: -1;
+    }
+
+    &__inner {
+        width: 50%;
+        margin-left: auto;
+        padding-top: 40px;
+        padding-right: 70px;
+    }
+
+    &__title {
+        color: #333333;
+        font-size: 2.75rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    .features {
+        &__caption {
+            font-size: 1.5rem;
+            padding-right: 20px;
+            margin-bottom: 45px;
+        }
+
+        &__list {}
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &__icon {
+            display: inline-block;
+            flex-basis: 80px;
+            flex-shrink: 0;
+
+            .icon {
+                width: 43px;
+                
+                &_doc {
+                    height: 55px;
+                }
+
+                &_figure {
+                    height: 43px;
+                }
+
+                &_facebook {
+                    height: 43px;
+                }
+
+                &_robot{
+                    height: 58px;
+                }
+            }
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include respond(lg) {
+    .layout-center {}
+
+    .head-title {}
+    
+    .advantages {
+        &__item {}
+    
+        &__title {}
+    
+        &__title-text {}
+    
+        &__description {}
+    }
+    
+    .teaser {
+    
+        &__pic {}
+    
+        &__inner {}
+    
+        &__title {}
+    
+        .features {
+            &__caption {}
+    
+            &__list {}
+    
+            &__item {}
+    
+            &__icon {
+    
+                .icon {
+                    
+                    &_doc {}
+    
+                    &_figure {}
+    
+                    &_facebook {}
+    
+                    &_robot{}
+                }
+            }
+    
+            &__text {}
+        }
+    }
+}
+
+
+@include respond(md) {
+    .layout-center {}
+
+    .head-title {}
+    
+    .advantages {
+        &__item {}
+    
+        &__title {}
+    
+        &__title-text {}
+    
+        &__description {}
+    }
+    
+    .teaser {
+    
+        &__pic {}
+    
+        &__inner {}
+    
+        &__title {}
+    
+        .features {
+            &__caption {}
+    
+            &__list {}
+    
+            &__item {}
+    
+            &__icon {
+    
+                .icon {
+                    
+                    &_doc {}
+    
+                    &_figure {}
+    
+                    &_facebook {}
+    
+                    &_robot{}
+                }
+            }
+    
+            &__text {}
+        }
+    }
+}
+
+@include respond(sm) {
+    .layout-center {}
+
+    .head-title {}
+    
+    .advantages {
+        &__item {}
+    
+        &__title {}
+    
+        &__title-text {}
+    
+        &__description {}
+    }
+    
+    .teaser {
+    
+        &__pic {}
+    
+        &__inner {}
+    
+        &__title {}
+    
+        .features {
+            &__caption {}
+    
+            &__list {}
+    
+            &__item {}
+    
+            &__icon {
+    
+                .icon {
+                    
+                    &_doc {}
+    
+                    &_figure {}
+    
+                    &_facebook {}
+    
+                    &_robot{}
+                }
+            }
+    
+            &__text {}
+        }
+    }
+}
